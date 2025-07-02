@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MyPortfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="left">
+                <span class="logo">DK</span>My Portfolio
+            </div>
+            <div class="right">
+                <ul>
+                    <li class="hideOnMobile"><a href="#home">Home</a></li>
+                    <li class="hideOnMobile"><a href="#about">About</a></li>
+                    <li class="hideOnMobile"><a href="#projects">Projects</a></li>
+                    <!-- <li><a href="/">Services</a></li> -->
+                    <li class="hideOnMobile"> <a href="#contact-me">Contact me</a></li>
+                    <li class="menu-button" onclick="showSidebar()"> <a href="#"><i class="fa-solid fa-bars"></i></a>
+                    </li>
+                </ul>
+                <ul class="sidebar">
+                    <li onclick="hideSidebar()"> <button><i class="fa-solid fa-xmark"></i></button></li>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <!-- <li><a href="/">Services</a></li> -->
+                    <li> <a href="#contact-me">Contact me</a></li>
+
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section id="home">
+            <div class="leftSection">
+               <span class="vertical-text">私の <br><span id="element"></span></span> 
+                <div>
+                    <a href="resume.pdf" target="_blank"><button>Donwload Resume</button></a>
+                    <a href="https://github.com/weakmob/My-Portfolio" target="_blank"><button>Visit Github <i class="fa-brands fa-github"></i></button></a>
+                </div>
+            </div>
+            <div class="rightSection"><img src="images/me2.jpg" alt=""></div>
+
+            <hr>
+        </section>
+        <hr>
+        <section id="about">
+            <div class="row">
+                <div class="left-col"><img src="images/myself-removebg-preview.png" alt=""></div>
+                <div class="right-col">
+                    <h1>About me</h1>
+                    <p><span class="purple">ダンゴルクリザン</span>と申します。<span class="purple">ネパール</span>出身です。現在、<span
+                            class="purple">愛和システムエンジニア学校</span>で１年生です。主に<span class="purple">JAVA, HTML, CSS,
+                            JAVASCRIPT</span>を学んでいます。技術力を高めながら、チームに貢献できるよう日々努力しています。
+                        将来は日本でシステムエンジニアとして活躍したいと考えております。
+                        どうぞよろしくお願いします。</p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">スキール</p>
+                        <p class="tab-links" onclick="opentab('language')">言語</p>
+                        <p class="tab-links" onclick="opentab('experience')">職歴</p>
+                        <p class="tab-links" onclick="opentab('education')">学歴</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <div class="skills-section">
+                            <div class="skill-titles">Java <img class="code-logo" src="images/java.png" alt=""></div>
+                            <div class="skill-bar">
+                                <div class="skill-level" style="width: 15%;">15%</div>
+                            </div>
+
+                            <div class="skill-titles">HTML <img class="code-logo" src="images/html.png" alt=""></div>
+                            <div class="skill-bar">
+                                <div class="skill-level" style="width: 90%;">90%</div>
+                            </div>
+
+                            <div class="skill-titles">CSS <img class="code-logo" src="images/css.png" alt=""></div>
+                            <div class="skill-bar">
+                                <div class="skill-level" style="width: 40%;">40%</div>
+                            </div>
+
+                            <div class="skill-titles">JavaScript <img class="code-logo" src="images/javascript.png" alt="">
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-level" style="width: 10%;">10%</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-contents" id="language">
+                        <ul>
+                            <li><span class="skill-titles">ネパール語</span><br> (母国語)
+                            </li>
+                            <li><span class="skill-titles">英語</span> <br>(日常会話)
+                            </li>
+                            <li><span class="skill-titles">日本語</span><br> (JLPT N2)
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+
+                        NONE
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span class="date">2011-2020</span>
+                                <span class="school-titles">（小学校から中学校)</span><br>NEW FLORENCE INT'L BOARDING SCHOOL
+                            </li>
+                            <li><span class="date">2020-2022</span><span class="school-titles"> (高校生)
+                                </span><br>JUBILANT COLLEGE
+                            </li>
+                            <li><span class="date">2023-2025</span><br>明日香日本語学校
+                            </li>
+                            <li><span class="date">2025-2027</span><br>愛和システムエンジニア専門学校
+                            </li>
+                        </ul>
+                    </div>
+
+
+
+                </div>
+            </div>
+        </section>
+        <hr>
+        <section id="projects">
+            <h1>MY PROJECTS</h1>
+            <h2>サンプル</h2>
+            <div class="project-container">
+                <div class="boxes box1">
+                    <img src="images/to-do-list.jpg" alt="To-Do List Project">
+                    <p>To-Do List App</p>
+                </div>
+                <div class="boxes box2">
+                    <p>Coming Soon</p>
+                </div>
+                <div class="boxes box3">
+                    <p>Coming Soon</p>
+                </div>
+            </div>
+        </section>
+
+        <hr>
+        <section id="contact-me">
+            <h1>CONTACT ME</h1>
+            <div class="row">
+                <div class="contact-left">
+                    <p> <i class="fa-solid fa-paper-plane"></i> krijandongol@gmail.com</p>
+                    <p> <i class="fa-solid fa-phone-volume"></i> 090-3326-6914</p>
+                    <div class="social-icons">
+                        <a href="https://www.facebook.com/krijan.dangol.9" target="_blank"><i
+                                class="fa-brands fa-facebook"></i></a>
+                        <a href="https://www.instagram.com/crusudar_pepe/" target="_blank"><i
+                                class="fa-brands fa-instagram"></i></a>
+                        <a href="https://line.me/ti/p/DS-hSqu0YZ" target="_blank"><i class="fa-brands fa-line"></i></a>
+                    </div>
+                </div>
+                <div class="contact-right">
+                    <form action="">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="text" name="email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button>Submit</button>
+                    </form>
+                </div>
+
+
+            </div>
+        </section>
+    </main>
+
+    <footer>
+   
+        <div>Copyright &copy;krijansportfolio.com | All rights reserved</div>
+    </footer>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <!-- Setup and start animation! -->
+    <script>
+        var typed = new Typed('#element', {
+            strings: ['ポートフォリオ'],
+            typeSpeed: 50,
+        });
+ 
+
+        function showSidebar() {
+            document.querySelector('.sidebar').classList.add('active');
+        }
+        function hideSidebar() {
+            document.querySelector('.sidebar').classList.remove('active');
+        }
+
+
+        var tablinks = document.getElementsByClassName("tab-links")
+        var tabcontents = document.getElementsByClassName("tab-contents")
+        function opentab(tabname) {
+            for (tablink of tablinks) {
+                tablink.classList.remove("active-link");
+            }
+            for (tabcontent of tabcontents) {
+                tabcontent.classList.remove("active-tab");
+            }
+
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab")
+        }
+    </script>
+</body>
+
+</html>
